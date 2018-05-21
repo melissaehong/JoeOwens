@@ -34,7 +34,7 @@ function initTestbed() {
     , windowWidth / windowHeight
     , 1, 1000);
   threeRenderer = new THREE.WebGLRenderer();
-  threeRenderer.setClearColor('#ff0000', .5);
+  threeRenderer.setClearColor('#ffffff', .5);
   threeRenderer.setSize(windowWidth, windowHeight);
 
   camera.position.x = 0;

@@ -1,13 +1,259 @@
 <!doctype html>
 <html>
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<link rel = 'stylesheet' href="../static/anApp/css/style.css">
 <style>
-    body {
-        font-family: Monospace;
-        background-color: #f0f0f0;
-        margin: 0;
-        overflow: hidden;
+    body{
+        background-image: url("../static/anApp/about.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: -400px 50%;
+        background-color: black;
+        color: white;
     }
+
+    a:link, a:visited, a:active{
+      text-decoration: none;
+      color: white;
+    }
+
+    #mainSection{
+      width: 1260px;
+      height: auto;
+      color:white;
+      border: 1px solid green;
+    }
+    #aboutLeft{
+      width: 730px;
+      height: auto;
+      display: inline-block;
+      border: 1px solid blue;
+    }
+
+    #aboutRight{
+      width: 509px;
+      height: auto;
+      margin-top: 500px;
+      display:inline-block;
+      border: 1px solid yellow;
+    }
+
+    #aboutImage{
+      position: absolute;
+      width: 200%;
+
+    }
+
+    #h1About{
+      position: fixed;
+      top: 60%;
+      left: 30%;
+      color: white;
+    }
+
+    .navigation{
+      color: white;
+    }
+
+    #blankSpace{
+      display: inline-block;
+      width: auto;
+      height: 400px;
+    }
+
+    #grid{
+      position: absolute;
+      width: 100%;
+    }
+
+    @media (max-width: 1300px){
+      #aboutRight{
+        width: 509px;
+        height: auto;
+        display:inline-block;
+        border: 1px solid yellow;
+      }
+
+      #aboutLeft{
+        width: 530px;
+        height: auto;
+        display: inline-block;
+        border: 1px solid blue;
+      }
+
+      #mainSection{
+        width: 1060px;
+        height: auto;
+        color:white;
+        border: 1px solid green;
+      }
+
+      .navigation{
+        position: fixed;
+        top: 0px;
+        left: 510px;
+        width: 1024px;
+        margin-top: 0%;
+        font-size: 18px;
+      }
+
+      body{
+          background-image: url("../static/anApp/about.png");
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-position: -350px 0%;
+          background-size: 1000px 800px;
+          background-color: black;
+          color: white;
+      }
+
+      @media (max-width: 1100px){
+        #aboutRight{
+          width: 509px;
+          height: auto;
+          display:inline-block;
+          border: 1px solid yellow;
+        }
+
+        #aboutLeft{
+          width: 430px;
+          height: auto;
+          display: inline-block;
+          border: 1px solid blue;
+        }
+
+        #mainSection{
+          width: 960px;
+          height: auto;
+          color:white;
+          border: 1px solid green;
+        }
+
+        .navigation{
+          position: fixed;
+          top: 0px;
+          left: 410px;
+          width: 624px;
+          margin-top: 0%;
+          font-size: 18px;
+        }
+
+        body{
+            background-image: url("../static/anApp/about.png");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: -330px 0%;
+            background-size: 1000px 800px;
+            background-color: black;
+            color: white;
+            border: 1px solid blue;
+        }
+
+        @media (max-width: 950px){
+          #aboutRight{
+            width: 409px;
+            height: auto;
+            display:inline-block;
+            border: 1px solid yellow;
+          }
+
+          #aboutLeft{
+            width: 290px;
+            height: auto;
+            display: inline-block;
+            border: 1px solid blue;
+          }
+
+          .navigation{
+            position: fixed;
+            top: 0px;
+            left: 310px;
+            width: 524px;
+            margin-top: 0%;
+            font-size: 18px;
+          }
+
+          body{
+              background-image: url("../static/anApp/about.png");
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-position: -270px 150%;
+              background-size: 700px 500px;
+              background-color: black;
+              color: white;
+          }
+
+          @media (max-width: 700px){
+            #aboutRight{
+              width: 309px;
+              height: auto;
+              display:inline-block;
+              border: 1px solid yellow;
+            }
+
+            #aboutLeft{
+              width: 230px;
+              height: auto;
+              display: inline-block;
+              border: 1px solid blue;
+            }
+
+            .navigation{
+              position: fixed;
+              top: 0px;
+              left: 210px;
+              width: 424px;
+              margin-top: 0%;
+              font-size: 18px;
+            }
+
+            body{
+                background-image: url("../static/anApp/about.png");
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: -270px 150%;
+                background-size: 700px 500px;
+                background-color: black;
+                color: white;
+            }
+
+            @media (max-width: 500px){
+              #aboutRight{
+                width: 209px;
+                height: auto;
+                display:inline-block;
+                border: 1px solid yellow;
+              }
+
+              #aboutLeft{
+                width: 130px;
+                height: auto;
+                display: inline-block;
+                border: 1px solid blue;
+              }
+
+              .navigation{
+                position: fixed;
+                top: 0px;
+                left: 110px;
+                width: 424px;
+                margin-top: 0%;
+                font-size: 18px;
+              }
+
+              body{
+                  background-image: url("../static/anApp/about.png");
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                  background-position: -100px 100%;
+                  background-size: 300px 250px;
+                  background-color: black;
+                  color: white;
+              }
+
+    }
+
+
 </style>
   <script src="../static/anApp/liquidfun.js"></script>
 
@@ -31,44 +277,50 @@
   <script src="../static/anApp/testbed/tests/testSurfaceTension.js"></script>
   <script src="../static/anApp/testbed/tests/testTheoJansen.js"></script>
   <script src="../static/anApp/testbed/tests/testWaveMachine.js"></script>
-  <link rel = 'stylesheet' href="../static/anApp/css/style.css">
-  <style>
-    #fishVideo{
-      position: absolute;
-    }
-    #videoBox {
-      width: 46%;
-      height: 15%;
-      display: inline-block;
-      position: absolute;
-      top: 65%;
-      right: 31.5%;
-      opacity: .4;
-    }
-
-    #canvas{
-      position: inherit;
-      width: 100%;
-      height: 100%;
-      opacity: 1;
-    }
-    video{
-      object-fit: cover;
-      position: inherit;
-      width: 120%;
-      height: auto;
-    }
-  </style>
-
 
 <body>
-  <div class = 'navigation'>
-     <ul>
+  <div>
+    <div class = 'navigation'>
+      <ul>
        <li><a href = "/">design</a></li>
        <li><a href = '/photo'>photo</a></li>
        <li><a href = '/about'>about</a></li>
        <li><a href = '/contact'>contact</a></li>
-    </ul>
+      </ul>
+    </div>
+    <div>
+      <h1 id = 'h1About'>about joe</h1>
+    </div>
+    <div id = 'mainSection'>
+      <div id = 'aboutLeft'>
+
+      </div>
+      <div id = 'aboutRight'>
+        Bacon ipsum dolor amet meatloaf drumstick shoulder ribeye turkey, pancetta brisket. Boudin tail beef ribs, t-bone bresaola tri-tip prosciutto swine ball tip filet mignon sausage fatback leberkas. Pancetta alcatra picanha turducken. Jerky salami sausage, swine ground round sirloin doner porchetta corned beef tongue.
+
+        Ground round pancetta boudin, picanha fatback tenderloin pork chop buffalo andouille pastrami cow filet mignon brisket. Pork chop kevin alcatra pork belly tri-tip. Cow swine alcatra short loin. Tri-tip t-bone chicken shoulder.
+
+        Swine ground round hamburger, boudin ribeye salami kevin sirloin biltong corned beef pork belly bresaola spare ribs kielbasa. Pork loin pancetta bresaola doner andouille landjaeger rump pig ham short ribs. Venison sausage ham pig cupim, beef ribs landjaeger tongue ball tip spare ribs strip steak biltong salami turducken kevin. Ham tri-tip shankle fatback, burgdoggen swine spare ribs filet mignon bresaola pork pork loin jerky ham hock ball tip pancetta. Spare ribs bacon pork chop shank meatball corned beef rump beef drumstick short ribs porchetta hamburger buffalo tenderloin. Buffalo pork frankfurter pig. Picanha prosciutto kielbasa, swine pork chop jowl biltong frankfurter tri-tip short loin shoulder ham hock tenderloin beef ribs fatback.
+
+        Pork tail boudin, sirloin buffalo sausage landjaeger short ribs ball tip brisket t-bone fatback pastrami andouille. Shank spare ribs fatback doner, boudin hamburger picanha burgdoggen ham ball tip. Porchetta ham shoulder, hamburger ham hock rump strip steak. Short ribs biltong short loin, buffalo landjaeger burgdoggen tenderloin. Alcatra fatback ham, chicken cow buffalo sirloin cupim. Spare ribs salami venison, pig strip steak bresaola turducken ham hock cow chicken shankle sirloin. Biltong tongue ribeye venison t-bone, tri-tip turkey.
+
+        Buffalo beef ribs filet mignon porchetta frankfurter pork loin jerky flank ham. Chicken brisket sausage corned beef, venison ham hock tail turkey andouille drumstick cupim turducken shoulder. Andouille spare ribs hamburger kielbasa flank shankle ham bresaola chuck frankfurter cow pastrami. Beef kevin capicola, prosciutto leberkas sausage short ribs turkey fatback tongue chicken. Pork swine landjaeger, kevin ball tip prosciutto doner kielbasa cupim tongue. Pork loin porchetta beef, shankle drumstick swine turkey andouille ribeye ham salami.
+
+        Swine hamburger t-bone salami meatball biltong boudin kevin rump ground round. Beef ribs doner andouille ham salami sirloin. Jerky hamburger beef pancetta, ribeye buffalo prosciutto corned beef shoulder andouille landjaeger. Strip steak biltong ribeye beef drumstick, tongue ground round boudin meatloaf pork belly shank. Boudin picanha sirloin swine biltong rump, ribeye pancetta pork belly meatloaf pork loin bresaola tenderloin capicola short loin. Tri-tip chicken landjaeger boudin venison bresaola sausage. Ham hock pancetta jowl tail pork loin.
+
+        Cupim pancetta beef ribs tail. Meatloaf tri-tip pork belly pork chop ball tip leberkas. Short loin short ribs bresaola, sirloin turkey beef ribs strip steak tri-tip prosciutto chicken pastrami hamburger cow pig. Short loin meatball filet mignon cupim turkey capicola picanha tongue flank turducken landjaeger t-bone bacon. Flank short loin buffalo boudin chuck shankle meatloaf. Jerky chuck short loin frankfurter shoulder sausage ham hock bresaola capicola hamburger tongue. Beef tri-tip tail, shoulder chicken bacon buffalo leberkas turducken pork ground round.
+
+        Landjaeger turkey venison kielbasa, chuck jowl ball tip rump t-bone buffalo tail shankle short loin pork loin capicola. Tenderloin tri-tip pancetta, sausage ribeye pork belly sirloin pork loin cow. Landjaeger buffalo bresaola filet mignon corned beef pancetta kevin pork beef venison frankfurter rump turkey brisket chuck. Pork loin strip steak pork chop rump tri-tip. Chuck shankle filet mignon sirloin cupim. Cow flank tri-tip, ball tip brisket andouille bresaola pancetta swine.
+
+        Meatball jerky ball tip, pig pork meatloaf prosciutto ribeye spare ribs bacon. Tongue turkey strip steak ham chuck sausage ribeye frankfurter beef andouille t-bone landjaeger bresaola biltong. Leberkas tongue beef ribs, jowl pork belly burgdoggen prosciutto picanha salami sirloin shoulder andouille tenderloin boudin tail. Pork loin landjaeger doner fatback burgdoggen kielbasa cow, buffalo pancetta sausage alcatra. Kielbasa pork belly picanha pork sausage prosciutto, turkey swine pig kevin t-bone.
+
+        Picanha boudin tenderloin biltong beef drumstick fatback brisket, swine prosciutto tri-tip sirloin. Turkey bacon tenderloin, bresaola jerky cupim pancetta rump pork chop doner beef ham hock pork loin burgdoggen strip steak. Tri-tip flank buffalo landjaeger kevin. Kevin sausage tri-tip pork loin shoulder ham hock. Corned beef beef ground round ham hock buffalo, strip steak kevin prosciutto burgdoggen ball tip ham cow.
+        <br>
+        <div id = 'blankSpace'>
+        </div>
+      </div>
+
+    </div>
   </div>
 </body>
 </html>
